@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LMaster.master.cs" Inherits="LibraryManagement.LMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<!DOCTYPE html>  
+  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+    <title>Libary management</title>
+    <link href="Style/Style.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+</head>  
+<body>  
+    <!DOCTYPE html>  
+<html>  
+<%--<head>  
+    <title>Library Management</title>  
+    <link href="Style/Style.css" rel="stylesheet" />
+</head> --%> 
+<body>  
+
+       
+     <div class="wrapper"> <header> <h1>E-LIBRARY</h1> 
+
+                              </header>
+            <aside> <h2></h2> 
+
+                <div class="table-list-header-toggle states">
+                    <div id="adduser" runat="server">
+                    <a href="Adduser.aspx" style="font-size: 23px;color: #ffffff;">Add User</a></div>
+                    <div id="addbook" runat="server">
+                     <a  href="AddBook.aspx" style="font-size: 23px;color: #ffffff;">Add Book</a></div>
+                   <div id="viewbook" runat="server" >
+                       <a href="ViewBook.aspx" style="font-size: 23px;color: #ffffff;">View Book</a></div>
+                    </div>
+
+
+            </aside> 
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+          
+        </asp:ContentPlaceHolder> 
+
+            </div>
+            <footer>  </footer>
+
+        </div>  
+</body>  
+</html>  
+  <%--  <form id="form1" runat="server">  
+      
+    </form>  --%>
+</body>  
+</html>  
